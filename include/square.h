@@ -8,10 +8,7 @@ class Square:public Figure{
 public:
     Square (std::string inColor, double centerX, double centerY, double inLength){
 
-        if (inColor == "red") { squareColor = RED; }
-        else if (inColor == "blue") { squareColor = BLUE; }
-        else if (inColor == "green") { squareColor = GREEN; }
-        else { squareColor = NONE; }
+        setColor(squareColor,inColor);
 
         squareCenter.x = centerX;
         squareCenter.y = centerY;

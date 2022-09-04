@@ -13,10 +13,7 @@ public:
 
     Circle (std::string inColor, double centerX, double centerY, double inRadius){
         assert(inRadius >0);
-        if (inColor == "red"){ circleColor = RED; }
-        else if (inColor == "blue"){circleColor = BLUE;}
-        else if (inColor == "green"){circleColor = GREEN;}
-        else {circleColor = NONE;}
+        setColor(circleColor,inColor);
 
         circleCenter.x = centerX;
         circleCenter.y = centerY;

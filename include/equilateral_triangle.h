@@ -13,10 +13,7 @@ public:
         return length * length * std::sqrt(3) / 4;
     }
     Equilateral_triangle (std::string inColor, double centerX, double centerY, double inLength){
-        if (inColor == "red") { triangleColor = RED; }
-        else if (inColor == "blue") { triangleColor = BLUE; }
-        else if (inColor == "green") { triangleColor = GREEN; }
-        else { triangleColor = NONE; }
+        setColor(triangleColor,inColor);
 
         triangleCenter.x = centerX;
         triangleCenter.y = centerY;

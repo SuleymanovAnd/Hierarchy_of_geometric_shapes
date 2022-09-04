@@ -43,4 +43,10 @@ public:
                   << Coordinates.y4 << ")";
 
     }
+    void setColor (color &clr, std::string inColor){
+        if (inColor == "red") { clr = RED; }
+        else if (inColor == "blue") { clr = BLUE; }
+        else if (inColor == "green") { clr = GREEN; }
+        else { clr = NONE; }
+    }
 };

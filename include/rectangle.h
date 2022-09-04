@@ -12,10 +12,7 @@ public:
     Rectangle (std::string inColor, double centerX, double centerY, double inWidth,double inHeight) {
         assert (inWidth >0);
         assert (inHeight >0);
-        if (inColor == "red") { rectangleColor = RED; }
-        else if (inColor == "blue") { rectangleColor = BLUE; }
-        else if (inColor == "green") { rectangleColor = GREEN; }
-        else { rectangleColor = NONE; }
+        setColor(rectangleColor,inColor);
 
         rectangleCenter.x = centerX;
         rectangleCenter.y = centerY;
