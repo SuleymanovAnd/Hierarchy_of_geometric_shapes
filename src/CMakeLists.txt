@@ -7,8 +7,11 @@ set(SOURCE
 
         )
 set(INCLUDE
-        ${MY_DIRECTORY}/
-        ${MY_DIRECTORY}/
+        ${MY_DIRECTORY}/circle.h
+        ${MY_DIRECTORY}/figure.h
+        ${MY_DIRECTORY}/equilateral_triangle.h
+        ${MY_DIRECTORY}/rectangle.h
+        ${MY_DIRECTORY}/square.h
         )
 
 
