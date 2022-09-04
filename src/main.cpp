@@ -7,9 +7,9 @@
 int main() {
     std::string cmd;
     std::cout << ": ";
-    std::getline (std::cin,cmd);
+    std::cin>>cmd;
 
-    if (cmd == "Circle"){
+    if (cmd == "circle"){
         std::string color;
         double x, y, radius;
         std::cout << "Enter color of circle: ";
@@ -27,7 +27,7 @@ int main() {
         std::cout << "Area of a circle = " << newCircle.areaOfACircle() <<std::endl;
         std::cout << "Color of a circle = " << newCircle.getCircleColor()<<std::endl;
         newCircle.getCircumscribingCircleCoordinates();
-    }else if (cmd == "Rectangle"){
+    }else if (cmd == "rectangle"){
         std::string color;
         double x, y, width, height;
         std::cout << "Enter color of rectangle: ";
@@ -45,7 +45,7 @@ int main() {
         std::cout << "Area of a rectangle = " << newRectangle.areaOfARectangle() <<std::endl;
         std::cout << "Color of a rectangle = " << newRectangle.getRectangleColor()<<std::endl;
         newRectangle.getCircumscribingRectangleCoordinates();
-    }else if (cmd == "Square"){
+    }else if (cmd == "square"){
         std::string color;
         double x, y, length;
         std::cout << "Enter color of square: ";
@@ -64,7 +64,7 @@ int main() {
         std::cout << "Color of a circle = " << newSquare.getSquareColor()<<std::endl;
         newSquare.getCircumscribingSquareCoordinates();
 
-    }else if (cmd == "Equilateral triangle"){
+    }else if (cmd == "triangle"){
         std::string color;
         double x, y, length;
         std::cout << "Enter color of equilateral triangle: ";
